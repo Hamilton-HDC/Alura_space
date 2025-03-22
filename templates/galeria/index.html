@@ -1,18 +1,6 @@
+{% extends 'galeria/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Alura Space</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="{% static '/styles/style.css'%}">
-</head>
-
+{% block content %}
 <body>
    <div class="pagina-inicial">
       <header class="cabecalho">
@@ -52,8 +40,9 @@
                   <h2 class="cards__titulo">Navegue pela galeria</h2>
                   <ul class="cards__lista">
                      <li class="card">
-                        <a href="imagem.html">
-                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                        <a href="{% url 'imagem' %}">
+                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                              alt="foto">
                         </a>
                         <span class="card__tag">Estrelas</span>
                         <div class="card__info">
@@ -61,14 +50,16 @@
                            <div class="card__texto">
                               <p class="card__descricao">Fonte/fotógrafo/satélite</p>
                               <span>
-                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                                    alt="ícone de coração">
                               </span>
                            </div>
                         </div>
                      </li>
                      <li class="card">
-                        <a href="imagem.html">
-                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                        <a href="{% url 'imagem' %}">
+                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                              alt="foto">
                         </a>
                         <span class="card__tag">Estrelas</span>
                         <div class="card__info">
@@ -76,14 +67,16 @@
                            <div class="card__texto">
                               <p class="card__descricao">Fonte/fotógrafo/satélite</p>
                               <span>
-                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                                    alt="ícone de coração">
                               </span>
                            </div>
                         </div>
                      </li>
                      <li class="card">
-                        <a href="imagem.html">
-                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                        <a href="{% url 'imagem' %}">
+                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                              alt="foto">
                         </a>
                         <span class="card__tag">Estrelas</span>
                         <div class="card__info">
@@ -91,14 +84,16 @@
                            <div class="card__texto">
                               <p class="card__descricao">Fonte/fotógrafo/satélite</p>
                               <span>
-                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                                    alt="ícone de coração">
                               </span>
                            </div>
                         </div>
                      </li>
                      <li class="card">
-                        <a href="imagem.html">
-                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                        <a href="{% url 'imagem' %}">
+                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                              alt="foto">
                         </a>
                         <span class="card__tag">Estrelas</span>
                         <div class="card__info">
@@ -106,14 +101,16 @@
                            <div class="card__texto">
                               <p class="card__descricao">Fonte/fotógrafo/satélite</p>
                               <span>
-                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                                    alt="ícone de coração">
                               </span>
                            </div>
                         </div>
                      </li>
                      <li class="card">
-                        <a href="imagem.html">
-                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                        <a href="{% url 'imagem' %}">
+                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                              alt="foto">
                         </a>
                         <span class="card__tag">Estrelas</span>
                         <div class="card__info">
@@ -121,14 +118,16 @@
                            <div class="card__texto">
                               <p class="card__descricao">Fonte/fotógrafo/satélite</p>
                               <span>
-                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                                    alt="ícone de coração">
                               </span>
                            </div>
                         </div>
                      </li>
                      <li class="card">
-                        <a href="imagem.html">
-                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}" alt="foto">
+                        <a href="{% url 'imagem' %}">
+                           <img class="card__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}"
+                              alt="foto">
                         </a>
                         <span class="card__tag">Estrelas</span>
                         <div class="card__info">
@@ -136,7 +135,8 @@
                            <div class="card__texto">
                               <p class="card__descricao">Fonte/fotógrafo/satélite</p>
                               <span>
-                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
+                                 <img src="{% static '/assets/ícones/1x/favorite_outline.png' %}"
+                                    alt="ícone de coração">
                               </span>
                            </div>
                         </div>
@@ -147,17 +147,5 @@
          </section>
       </main>
    </div>
-   <footer class="rodape">
-      <div class="rodape__icones">
-         <a href="https://twitter.com/AluraOnline" target=”_blank”>
-            <img src="{% static '/assets/ícones/1x/twitter.png' %}" alt="ícone twitter">
-         </a>
-         <a href="https://www.instagram.com/aluraonline/" target=”_blank”>
-            <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="ícone instagram">
-         </a>
-      </div>
-      <p class="rodape__texto">Desenvolvido por Alura</p>
-   </footer>
-</body>
-
-</html>
+  
+{% endblock %}
